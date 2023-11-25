@@ -11,7 +11,7 @@ import SwiftUI
 struct Celebrus_AssessmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ArticleListView(articleListViewModel: ArticleListViewModel(networkManager: NetworkManager()))
         }
     }
 }
