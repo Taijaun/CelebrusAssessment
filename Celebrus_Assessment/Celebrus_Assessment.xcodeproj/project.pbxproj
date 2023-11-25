@@ -14,6 +14,12 @@
 		D6E26ECB2B11037D0095DEEA /* Celebrus_AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26ECA2B11037D0095DEEA /* Celebrus_AssessmentTests.swift */; };
 		D6E26ED52B11037D0095DEEA /* Celebrus_AssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26ED42B11037D0095DEEA /* Celebrus_AssessmentUITests.swift */; };
 		D6E26ED72B11037D0095DEEA /* Celebrus_AssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26ED62B11037D0095DEEA /* Celebrus_AssessmentUITestsLaunchTests.swift */; };
+		D6E26EE72B1266950095DEEA /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26EE62B1266950095DEEA /* ArticleModel.swift */; };
+		D6E26EEB2B12683A0095DEEA /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26EEA2B12683A0095DEEA /* NetworkingError.swift */; };
+		D6E26EED2B1268750095DEEA /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26EEC2B1268750095DEEA /* Networkable.swift */; };
+		D6E26EEF2B1268B20095DEEA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26EEE2B1268B20095DEEA /* NetworkManager.swift */; };
+		D6E26EF12B12692C0095DEEA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26EF02B12692C0095DEEA /* Endpoints.swift */; };
+		D6E26EF32B126A930095DEEA /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26EF22B126A930095DEEA /* ArticleListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		D6E26ED02B11037D0095DEEA /* Celebrus_AssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Celebrus_AssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E26ED42B11037D0095DEEA /* Celebrus_AssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celebrus_AssessmentUITests.swift; sourceTree = "<group>"; };
 		D6E26ED62B11037D0095DEEA /* Celebrus_AssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celebrus_AssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D6E26EE62B1266950095DEEA /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		D6E26EEA2B12683A0095DEEA /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		D6E26EEC2B1268750095DEEA /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		D6E26EEE2B1268B20095DEEA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D6E26EF02B12692C0095DEEA /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		D6E26EF22B126A930095DEEA /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,8 @@
 		D6E26EB82B11037C0095DEEA /* Celebrus_Assessment */ = {
 			isa = PBXGroup;
 			children = (
+				D6E26EE92B1268260095DEEA /* Services */,
+				D6E26EE82B12681A0095DEEA /* Utilities */,
 				D6E26EE32B11058D0095DEEA /* Model */,
 				D6E26EE42B1105920095DEEA /* View */,
 				D6E26EE52B11059D0095DEEA /* View Model */,
@@ -133,6 +147,7 @@
 		D6E26EE32B11058D0095DEEA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D6E26EE62B1266950095DEEA /* ArticleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,8 +162,27 @@
 		D6E26EE52B11059D0095DEEA /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				D6E26EF22B126A930095DEEA /* ArticleListViewModel.swift */,
 			);
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		D6E26EE82B12681A0095DEEA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D6E26EF02B12692C0095DEEA /* Endpoints.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D6E26EE92B1268260095DEEA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D6E26EEA2B12683A0095DEEA /* NetworkingError.swift */,
+				D6E26EEC2B1268750095DEEA /* Networkable.swift */,
+				D6E26EEE2B1268B20095DEEA /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E26EEF2B1268B20095DEEA /* NetworkManager.swift in Sources */,
+				D6E26EF32B126A930095DEEA /* ArticleListViewModel.swift in Sources */,
 				D6E26EBC2B11037C0095DEEA /* ContentView.swift in Sources */,
+				D6E26EE72B1266950095DEEA /* ArticleModel.swift in Sources */,
+				D6E26EF12B12692C0095DEEA /* Endpoints.swift in Sources */,
+				D6E26EEB2B12683A0095DEEA /* NetworkingError.swift in Sources */,
+				D6E26EED2B1268750095DEEA /* Networkable.swift in Sources */,
 				D6E26EBA2B11037C0095DEEA /* Celebrus_AssessmentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
