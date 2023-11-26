@@ -6,9 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class ArticleListViewModel: ObservableObject {
-    var articleList = [articles]()
+    @Published var articlesList = [Article]()
+    @State var searchText: String = ""
+    @State var showWeb: Bool = false
+    
     let networkManager: Networkable
     
     init(networkManager: Networkable) {
@@ -16,10 +20,12 @@ final class ArticleListViewModel: ObservableObject {
     }
     
     @MainActor func getArticles(url: String) async {
-        do {
-            articleList = try await networkManager.request(url: url, modelType: [articles].self)
-        } catch {
-            
+        articlesList = [Article]()
+            do {
+                let data = try await networkManager.request(url: url, modelType: Responses.self)
+                articlesList = data.articles
+            } catch {
+                print("Failed to load: \(error.localizedDescription)")
+            }
         }
-    }
 }

@@ -21,6 +21,11 @@
 		D6E26EF32B126A930095DEEA /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26EF22B126A930095DEEA /* ArticleListViewModel.swift */; };
 		D6E26EF52B126C000095DEEA /* ArticleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26EF42B126C000095DEEA /* ArticleListCell.swift */; };
 		D6E26EF72B126F6C0095DEEA /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26EF62B126F6C0095DEEA /* ArticleListView.swift */; };
+		D6E26F3C2B1384980095DEEA /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26F3B2B1384970095DEEA /* WebView.swift */; };
+		D6E26F412B13A31F0095DEEA /* article.json in Resources */ = {isa = PBXBuildFile; fileRef = D6E26F402B13A31F0095DEEA /* article.json */; };
+		D6E26F432B13A40B0095DEEA /* emptyjson.json in Resources */ = {isa = PBXBuildFile; fileRef = D6E26F422B13A40B0095DEEA /* emptyjson.json */; };
+		D6E26F452B13A44A0095DEEA /* FakeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26F442B13A44A0095DEEA /* FakeNetworkManager.swift */; };
+		D6E26F472B13A4E00095DEEA /* ArticleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E26F462B13A4E00095DEEA /* ArticleViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		D6E26EF22B126A930095DEEA /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 		D6E26EF42B126C000095DEEA /* ArticleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListCell.swift; sourceTree = "<group>"; };
 		D6E26EF62B126F6C0095DEEA /* ArticleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
+		D6E26F3B2B1384970095DEEA /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		D6E26F402B13A31F0095DEEA /* article.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = article.json; sourceTree = "<group>"; };
+		D6E26F422B13A40B0095DEEA /* emptyjson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = emptyjson.json; sourceTree = "<group>"; };
+		D6E26F442B13A44A0095DEEA /* FakeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
+		D6E26F462B13A4E00095DEEA /* ArticleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +141,10 @@
 		D6E26EC92B11037D0095DEEA /* Celebrus_AssessmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				D6E26F3F2B13A2EF0095DEEA /* TestJson */,
+				D6E26F3E2B13A2E10095DEEA /* ArticleViewModelTests */,
 				D6E26ECA2B11037D0095DEEA /* Celebrus_AssessmentTests.swift */,
+				D6E26F442B13A44A0095DEEA /* FakeNetworkManager.swift */,
 			);
 			path = Celebrus_AssessmentTests;
 			sourceTree = "<group>";
@@ -158,6 +171,7 @@
 			children = (
 				D6E26EF42B126C000095DEEA /* ArticleListCell.swift */,
 				D6E26EF62B126F6C0095DEEA /* ArticleListView.swift */,
+				D6E26F3B2B1384970095DEEA /* WebView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +200,23 @@
 				D6E26EEE2B1268B20095DEEA /* NetworkManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		D6E26F3E2B13A2E10095DEEA /* ArticleViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6E26F462B13A4E00095DEEA /* ArticleViewModelTests.swift */,
+			);
+			path = ArticleViewModelTests;
+			sourceTree = "<group>";
+		};
+		D6E26F3F2B13A2EF0095DEEA /* TestJson */ = {
+			isa = PBXGroup;
+			children = (
+				D6E26F402B13A31F0095DEEA /* article.json */,
+				D6E26F422B13A40B0095DEEA /* emptyjson.json */,
+			);
+			path = TestJson;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +332,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E26F412B13A31F0095DEEA /* article.json in Resources */,
+				D6E26F432B13A40B0095DEEA /* emptyjson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E26EEF2B1268B20095DEEA /* NetworkManager.swift in Sources */,
+				D6E26F3C2B1384980095DEEA /* WebView.swift in Sources */,
 				D6E26EF72B126F6C0095DEEA /* ArticleListView.swift in Sources */,
 				D6E26EF32B126A930095DEEA /* ArticleListViewModel.swift in Sources */,
 				D6E26EE72B1266950095DEEA /* ArticleModel.swift in Sources */,
@@ -335,6 +369,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E26ECB2B11037D0095DEEA /* Celebrus_AssessmentTests.swift in Sources */,
+				D6E26F452B13A44A0095DEEA /* FakeNetworkManager.swift in Sources */,
+				D6E26F472B13A4E00095DEEA /* ArticleViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +528,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Celebrus_Assessment/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Celebrus-Assessment-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -520,6 +557,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Celebrus_Assessment/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Celebrus-Assessment-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

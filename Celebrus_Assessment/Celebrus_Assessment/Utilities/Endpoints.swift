@@ -8,5 +8,7 @@
 import Foundation
 
 struct Endpoints{
-    static let newsEndPoint = "https://newsapi.org/v2/everything?q=bitcoin&apiKey=4b4fa2cc69d2418cb8ad3dde732616c1"
+    static let newsEndPoint = "https://newsapi.org/v2/everything?q="
+    static let apiKeyQuery = "&apiKey=4b4fa2cc69d2418cb8ad3dde732616c1"
+    
 }

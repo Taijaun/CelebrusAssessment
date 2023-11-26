@@ -10,3 +10,4 @@ import Foundation
 protocol Networkable {
     func request<T: Decodable>(url: String, modelType: T.Type) async throws -> T
 }
+

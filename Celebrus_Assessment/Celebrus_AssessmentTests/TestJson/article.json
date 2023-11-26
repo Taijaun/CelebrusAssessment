@@ -1,0 +1,12 @@
+{
+    "status": "ok",
+    "totalresults": 11685,
+    "articles": [
+            {
+                "title": "Made up article 1",
+                "author": "myself",
+                "publishedAt": "2023-10-27T20:10:00Z",
+                "url": "https://google.co.uk"
+            }
+    ]
+}
